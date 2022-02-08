@@ -35,6 +35,7 @@
 {{ partial "styles.html" . }}
 {{ $options := (dict "targetPath" "assets/css/fuji.min.css" "outputStyle" "compressed") }}
 {{ $style := resources.Get "scss/fuji.scss" | resources.ToCSS $options }}
+<link rel="stylesheet"  href="/css/custom.css" />
 <link rel="stylesheet" href="{{ $style.Permalink }}" />
 {{ with .Site.Params.googleAdsense }}
 <script async data-ad-client="ca-pub-{{ . }}" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
