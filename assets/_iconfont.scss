@@ -11,9 +11,11 @@
  
   font-family: "IcoFont";
 font-weight: normal;
-font-style: "Regular";
-src: url("icofont.woff2") format("woff2"),
-url("icofont.woff") format("woff");
+
+src: url("/assets/iconfont/iconfont.woff2") format("woff2"),
+url("/assets/iconfont/iconfont.woff") format("woff"),
+url('/assets/iconfont/iconfont.ttf') format('truetype'),
+url('/assets/iconfont/iconfont.svg') format('svg');
 }
 
 [class^="icofont-"], [class*=" icofont-"]
@@ -29,9 +31,20 @@ url("icofont.woff") format("woff");
   direction: ltr;
   line-height: 1;
 /* Better Font Rendering =========== */
+
   -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
 }
+
+
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: inherit;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 
 .icofont-angry-monster:before
 {
